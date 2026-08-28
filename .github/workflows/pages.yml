@@ -18,6 +18,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Disable invalid Google Sheet RSVP endpoint
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          s = s.replace("const RSVP_ENDPOINT='https://docs.google.com/spreadsheets/d/1-c2Q_srQOXWq1TksEXX3frMVnANi5uQGYRWbJJAOcX8/edit?usp=drivesdk';", "const RSVP_ENDPOINT='';")
+          p.write_text(s)
+          PY
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
