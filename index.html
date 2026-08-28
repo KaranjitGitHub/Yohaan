@@ -1,1 +1,150 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#030816"><title>Yohaan // Level 04</title><style>*{box-sizing:border-box}html,body{margin:0;background:#02050d;color:#f7fbff;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100dvh;display:grid;place-items:center;padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));overflow:hidden}.app{width:min(100%,430px);height:min(calc(100dvh - 24px),860px);display:grid;grid-template-rows:auto 1fr auto auto;gap:9px}.top{display:flex;justify-content:space-between;align-items:center;color:#9bdfff;font:800 10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;padding:0 4px}.screen{position:relative;min-height:0;overflow:hidden;border:1px solid rgba(125,211,252,.5);border-radius:20px;background:radial-gradient(circle at 50% 30%,#0b1e3a,#040916 55%,#01030a 100%);padding:18px;display:flex;flex-direction:column}.screen::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#fff 0.8px,transparent 0.8px),radial-gradient(#86d9ff 0.6px,transparent 0.6px);background-size:28px 28px,42px 42px;background-position:0 0,14px 9px;opacity:.28}.content{position:relative;z-index:2;display:flex;flex-direction:column;min-height:100%;gap:12px}.kicker{text-align:center;color:#8fdcff;font:800 11px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em}.title{text-align:center;font-weight:900;font-size:clamp(28px,8vw,44px);line-height:.98;margin:0;color:#fff}.subtitle{text-align:center;color:#c7dded;font-size:15px;line-height:1.4;margin:0}.planetScene{position:relative;flex:1;min-height:210px;display:grid;place-items:center}.planet{position:absolute;border-radius:50%}.earth{width:178px;height:178px;background:radial-gradient(circle at 35% 30%,#d9fbff 0 4%,#3aa5ff 18%,#195cba 45%,#08306f 73%,#020919 100%);box-shadow:0 0 38px rgba(63,169,255,.3),inset -24px -16px 40px rgba(0,0,0,.45)}.earth::after{content:"";position:absolute;inset:28px 22px 55px 40px;border-radius:50%;background:#55bb75;filter:blur(1px);transform:rotate(-18deg);opacity:.75}.saturn{width:140px;height:140px;background:radial-gradient(circle at 35% 30%,#ffe6a8,#c99647 45%,#7d4c1f 78%,#21120a 100%);box-shadow:0 0 32px rgba(255,196,87,.2)}.saturn::after{content:"";position:absolute;left:-55px;top:51px;width:250px;height:42px;border:8px solid rgba(233,203,149,.9);border-left-color:rgba(149,106,52,.5);border-right-color:rgba(149,106,52,.5);border-radius:50%;transform:rotate(-12deg)}.mars{width:120px;height:120px;background:radial-gradient(circle at 35% 30%,#ffb07d,#c95d36 50%,#6c2218 82%,#1d0807);box-shadow:0 0 28px rgba(255,102,69,.18)}.moon{width:58px;height:58px;background:radial-gradient(circle at 32% 28%,#f6f8fb,#a6b0be 58%,#525c6a 85%);right:8%;top:14%}.orbit{position:absolute;width:260px;height:110px;border:1px solid rgba(137,215,255,.32);border-radius:50%;transform:rotate(-10deg)}.sun{width:132px;height:132px;background:radial-gradient(circle,#fff7c0 0 8%,#ffd258 25%,#ff8f24 58%,rgba(255,91,20,.35) 80%,transparent 81%);box-shadow:0 0 46px rgba(255,174,49,.35)}.panel{border:1px solid rgba(120,196,232,.35);background:rgba(3,12,25,.82);border-radius:14px;padding:14px;color:#f7fbff}.panel strong{color:#fff}.bigLine{font-size:18px;font-weight:800;line-height:1.35}.muted{color:#c6d8e8}.details{display:grid;gap:10px}.detail{padding:11px 12px;border:1px solid rgba(128,199,235,.28);border-radius:12px;background:rgba(4,15,29,.78)}.label{font:800 10px ui-monospace,SFMono-Regular,Menlo,monospace;color:#79dbff;letter-spacing:.12em}.value{font-size:15px;font-weight:800;margin-top:3px;line-height:1.35}.status{text-align:center;font-size:11px;color:#bddff1;min-height:14px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#ffbe45;margin-right:6px;box-shadow:0 0 8px #ffbe45}.dot.ok{background:#54e875;box-shadow:0 0 8px #54e875}.controls{display:grid;gap:8px}.controls.two{grid-template-columns:1fr 1fr}button{appearance:none;min-height:48px;border-radius:12px;border:1px solid rgba(122,216,255,.7);background:#08203a;color:#fff;padding:10px 14px;font:900 13px ui-monospace,SFMono-Regular,Menlo,monospace}button.primary{background:#f3b63b;color:#101010;border-color:#ffd76b}button.success{background:#39d96a;color:#041008;border-color:#86f0a3}button.danger{background:#52151e;color:#ffdce0;border-color:#ff6a78}.progress{height:7px;border-radius:99px;background:#071322;border:1px solid rgba(117,199,238,.3);overflow:hidden}.progress i{display:block;height:100%;width:0;background:#68dfff}.scanBox{display:grid;place-items:center;min-height:230px;border:1px solid rgba(111,217,255,.35);border-radius:16px;background:radial-gradient(circle at center,rgba(47,168,255,.15),transparent 65%)}.fingerprint{width:130px;height:160px;border-radius:50%;border:3px solid #68dcff;box-shadow:inset 0 0 25px rgba(72,206,255,.2),0 0 28px rgba(72,206,255,.15);position:relative}.fingerprint::before,.fingerprint::after{content:"";position:absolute;inset:15px;border-radius:50%;border:2px solid rgba(104,220,255,.75)}.fingerprint::after{inset:32px}.scanline{position:absolute;width:160px;height:2px;background:#7be9ff;box-shadow:0 0 12px #7be9ff;animation:scan 1.4s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateY(-55px)}50%{transform:translateY(55px)}}.check{font-size:72px;color:#60ef7d;text-align:center}.confirmOrb{width:165px;height:165px;border-radius:50%;display:grid;place-items:center;margin:auto;border:2px solid #f3be48;box-shadow:0 0 35px rgba(243,190,72,.25),inset 0 0 25px rgba(243,190,72,.12);font-size:70px;color:#ffd56f}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti b{position:absolute;top:-15px;animation:fall 1.5s linear forwards}@keyframes fall{to{transform:translateY(680px) rotate(360deg);opacity:0}}@media(max-width:380px){body{padding:8px}.app{height:calc(100dvh - 16px);gap:6px}.screen{padding:13px;border-radius:16px}.planetScene{min-height:180px}.earth{width:150px;height:150px}.saturn{width:120px;height:120px}.saturn::after{left:-45px;top:45px;width:210px;height:36px}.details{gap:7px}.detail{padding:9px}.value{font-size:13px}button{min-height:44px;font-size:12px}}@media(max-height:700px){.screen{padding:12px}.planetScene{min-height:150px}.earth{width:130px;height:130px}.saturn{width:105px;height:105px}.saturn::after{left:-38px;top:39px;width:180px;height:30px}.title{font-size:25px}.subtitle{font-size:13px}.panel{padding:10px}.detail{padding:8px}button{min-height:42px}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style></head><body><main class="app"><div class="top"><span>YOHAAN // LEVEL 04</span><span id="step">1 / 8</span></div><section id="screen" class="screen"></section><div id="controls" class="controls"></div><div class="status"><span id="dot" class="dot"></span><span id="status">INVITATION LOCKED</span><div id="progress" class="progress" hidden><i id="bar"></i></div></div></main><script>(()=>{const s=document.getElementById('screen'),c=document.getElementById('controls'),step=document.getElementById('step'),status=document.getElementById('status'),dot=document.getElementById('dot'),progress=document.getElementById('progress'),bar=document.getElementById('bar');let timer=null;function st(t,ok=false){status.textContent=t;dot.classList.toggle('ok',ok)}function btn(t,cl,f){const b=document.createElement('button');b.type='button';b.textContent=t;if(cl)b.className=cl;b.addEventListener('click',f);c.appendChild(b)}function base(n){clearInterval(timer);c.innerHTML='';c.className='controls';progress.hidden=true;bar.style.width='0';step.textContent=n+' / 8';s.innerHTML='<div class="content" id="content"></div>';return document.getElementById('content')}function show(n){const x=base(n);if(n===1){st('INVITATION LOCKED');x.innerHTML='<div class="kicker">PRIVATE BIRTHDAY TRANSMISSION</div><h1 class="title">YOHAAN<br>LEVEL 04</h1><p class="subtitle">A special mission from across the solar system is waiting for you.</p><div class="planetScene"><div class="sun"></div><div class="earth" style="left:4%;bottom:1%"></div><div class="moon"></div><div class="orbit"></div></div><div class="panel"><div class="bigLine">Tap below to open your invitation.</div><div class="muted" style="margin-top:6px">For family and friends only.</div></div>';btn('OPEN INVITATION','primary',()=>show(2))}if(n===2){st('STARTING SYSTEM');x.innerHTML='<div class="kicker">SYSTEM STARTUP</div><h1 class="title">PREPARING<br>MISSION</h1><p class="subtitle">Connecting to Yohaan Level 04…</p><div class="planetScene"><div class="saturn"></div><div class="orbit"></div></div><div class="details"><div class="detail"><div class="label">NAVIGATION</div><div class="value">ONLINE</div></div><div class="detail"><div class="label">MISSION LINK</div><div class="value">SECURE</div></div><div class="detail"><div class="label">INVITATION DATA</div><div class="value">READY</div></div></div>';progress.hidden=false;let p=0;timer=setInterval(()=>{p+=5;bar.style.width=p+'%';if(p>=100){clearInterval(timer);st('SYSTEM READY',true);setTimeout(()=>show(3),350)}},45)}if(n===3){st('IDENTITY CHECK');x.innerHTML='<div class="kicker">IDENTITY CHECK</div><h1 class="title">VERIFY<br>GUEST</h1><p class="subtitle">Tap the scanner to continue.</p><div class="scanBox"><div class="fingerprint"></div><div class="scanline"></div></div><div class="panel"><div class="bigLine">No real fingerprint is collected.</div><div class="muted" style="margin-top:6px">This is just part of the birthday mission.</div></div>';btn('TAP TO VERIFY','',()=>{st('VERIFYING…');setTimeout(()=>show(4),650)})}if(n===4){st('ACCESS GRANTED',true);x.innerHTML='<div class="kicker" style="color:#72f093">ACCESS GRANTED</div><h1 class="title" style="color:#6cf48b">YOU’RE IN!</h1><div class="planetScene"><div class="earth"></div><div class="orbit" style="border-color:rgba(103,244,139,.28)"></div></div><div class="check">✓</div><div class="panel"><div class="bigLine">Welcome to Yohaan Level 04.</div><div class="muted" style="margin-top:6px">Your mission briefing is ready.</div></div>';btn('VIEW MESSAGE','success',()=>show(5))}if(n===5){st('MESSAGE RECEIVED',true);x.innerHTML='<div class="kicker">MESSAGE FROM YOHAAN</div><h1 class="title">HELLO!</h1><p class="subtitle">I’m turning four and I’d love you to celebrate with me.</p><div class="planetScene"><div class="mars" style="left:8%;bottom:6%"></div><div class="earth" style="width:120px;height:120px;right:4%;top:4%"></div><div class="moon" style="left:42%;top:18%"></div><div class="orbit"></div></div><div class="panel"><div class="bigLine">Get ready for lunch, fun and a space-sized celebration!</div></div>';btn('SEE PARTY DETAILS','',()=>show(6))}if(n===6){st('MISSION DETAILS',true);x.innerHTML='<div class="kicker">MISSION BRIEFING</div><h1 class="title">PARTY<br>DETAILS</h1><div class="planetScene" style="min-height:150px"><div class="saturn" style="width:110px;height:110px"></div></div><div class="details"><div class="detail"><div class="label">DATE</div><div class="value">Saturday, 5 September 2026</div></div><div class="detail"><div class="label">TIME</div><div class="value">12:30 PM · Lunch celebration</div></div><div class="detail"><div class="label">LOCATION</div><div class="value">1 Clarafield Crescent, Tarneit</div></div><div class="detail"><div class="label">MISSION</div><div class="value">Eat · Play · Laugh · Celebrate</div></div></div>';btn('CONTINUE','',()=>show(7))}if(n===7){st('YOUR RESPONSE NEEDED',true);x.innerHTML='<div class="kicker">FINAL CHECK</div><h1 class="title">CAN YOU<br>JOIN US?</h1><p class="subtitle">Choose your mission response below.</p><div class="planetScene"><div class="earth" style="width:145px;height:145px"></div><div class="moon" style="right:16%;top:22%"></div><div class="orbit"></div></div><div class="panel"><div class="bigLine">Yohaan would love to celebrate with you.</div></div>';c.className='controls two';btn('YES · I’M IN','success',()=>show(8));btn('CAN’T MAKE IT','danger',()=>{st('RESPONSE RECEIVED');c.className='controls';c.innerHTML='';btn('VIEW DETAILS AGAIN','',()=>show(6))})}if(n===8){st('MISSION CONFIRMED',true);x.innerHTML='<div id="confetti" class="confetti"></div><div class="kicker" style="color:#ffd978">MISSION CONFIRMED</div><h1 class="title" style="color:#ffd978">SEE YOU<br>THERE!</h1><div class="planetScene"><div class="sun"></div><div class="orbit" style="border-color:rgba(255,211,105,.34)"></div></div><div class="confirmOrb">✓</div><div class="panel"><div class="bigLine">Saturday, 5 September · 12:30 PM</div><div class="muted" style="margin-top:6px">1 Clarafield Crescent, Tarneit</div><div style="margin-top:12px;font-weight:800;color:#ffd978">— Yohaan</div></div>';const cf=document.getElementById('confetti');for(let i=0;i<22;i++){const e=document.createElement('b');e.textContent=['✦','★','●'][i%3];e.style.left=Math.random()*96+'%';e.style.color=i%2?'#ffd66a':'#83dcff';e.style.animationDelay=Math.random()*.4+'s';cf.appendChild(e)}btn('REPLAY INVITATION','',()=>show(1))}}show(1)})();</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050711">
+<title>Yohaan turns 4</title>
+<style>
+:root{--bg:#050711;--panel:#0b1020;--text:#f7f8fb;--muted:#b9c2d0;--cyan:#7ee7ff;--gold:#ffd36a;--green:#7df0a0;--red:#ff7f91;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}body{min-height:100dvh;padding:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));display:grid;place-items:center;overflow:hidden}.app{width:min(100%,430px);height:min(calc(100dvh - 28px),880px);display:grid;grid-template-rows:auto 1fr auto;gap:10px}.top{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#98a6bb;padding:0 4px}.top b{color:#fff}.stage{position:relative;overflow:hidden;border-radius:26px;border:1px solid var(--line);background:linear-gradient(180deg,#0b1020 0%,#070b16 52%,#050711 100%);min-height:0}.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";pointer-events:none;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.2px);background-size:41px 41px;opacity:.24}.stars:before{background-size:63px 63px;background-position:16px 9px;opacity:.15}.stars:after{background-size:91px 91px;background-position:37px 28px;opacity:.12}.screen{position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;gap:14px;opacity:0;transform:translateX(24px) scale(.985);pointer-events:none;transition:opacity .38s ease,transform .38s ease}.screen.active{opacity:1;transform:none;pointer-events:auto}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:800}.headline{font-size:clamp(34px,10vw,52px);line-height:.96;margin:0;letter-spacing:-.045em;font-weight:900}.sub{font-size:16px;line-height:1.48;color:var(--muted);margin:0}.scene{position:relative;flex:1;min-height:220px;display:grid;place-items:center}.scene svg{width:100%;height:100%;max-height:380px;overflow:visible}.glass{border:1px solid var(--line);background:rgba(12,18,34,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:18px;padding:15px}.glass strong{display:block;font-size:18px;line-height:1.25;margin-bottom:5px}.meta{display:grid;gap:9px}.row{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035)}.icon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(126,231,255,.1);color:var(--cyan);font-weight:900;flex:0 0 auto}.row small{display:block;color:#8d9ab0;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:2px}.row b{font-size:15px;line-height:1.35}.controls{display:grid;gap:8px}.controls.two{grid-template-columns:1fr 1fr}button{appearance:none;border:1px solid rgba(126,231,255,.45);border-radius:14px;min-height:50px;padding:11px 14px;background:#0d2032;color:#fff;font-size:14px;font-weight:850;letter-spacing:.01em}button.primary{background:linear-gradient(135deg,#ffd36a,#ffb43b);color:#171006;border-color:#ffe3a1}button.success{background:linear-gradient(135deg,#67e692,#36c86e);color:#07140c;border-color:#a7f4bc}button.danger{background:#3c1821;color:#ffdce2;border-color:#8b3c4b}.pager{display:flex;justify-content:center;gap:6px}.pager i{width:6px;height:6px;border-radius:99px;background:#394156;transition:width .25s ease,background .25s ease}.pager i.on{width:22px;background:var(--cyan)}.tag{display:inline-flex;align-self:flex-start;border-radius:99px;padding:7px 10px;font-size:11px;font-weight:800;background:rgba(255,211,106,.1);color:var(--gold);border:1px solid rgba(255,211,106,.22)}.quote{font-size:21px;line-height:1.38;font-weight:800;letter-spacing:-.02em}.gold{color:var(--gold)}.green{color:var(--green)}.confirmMark{font-size:74px;line-height:1;color:var(--gold);text-align:center}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti b{position:absolute;top:-20px;animation:fall 1.7s linear forwards}@keyframes fall{to{transform:translateY(720px) rotate(360deg);opacity:0}}@keyframes orbit{to{transform:rotate(360deg)}}.orbiting{transform-origin:50% 50%;animation:orbit 18s linear infinite}.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{opacity:.6;transform:scale(1.03)}}@media(max-width:380px){body{padding:8px}.app{height:calc(100dvh - 16px);gap:7px}.stage{border-radius:20px}.screen{padding:17px}.scene{min-height:180px}.headline{font-size:34px}.sub{font-size:14px}.glass{padding:12px}.row{padding:10px}.row b{font-size:13px}button{min-height:46px;font-size:13px}}@media(max-height:720px){.screen{padding:15px;gap:10px}.scene{min-height:155px}.headline{font-size:31px}.sub{font-size:13px}.glass{padding:11px}.quote{font-size:18px}.meta{gap:6px}.row{padding:8px}button{min-height:44px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="app">
+  <div class="top"><b>YOHAAN // LEVEL 04</b><span id="counter">01 / 06</span></div>
+  <section class="stage" aria-live="polite">
+    <div class="stars"></div>
+
+    <article class="screen active" data-step="1">
+      <div class="eyebrow">A transmission from space</div>
+      <h1 class="headline">Yohaan is<br><span class="gold">turning 4.</span></h1>
+      <p class="sub">A small birthday mission has just entered your orbit.</p>
+      <div class="scene">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Earth rising above a glowing horizon">
+          <defs>
+            <radialGradient id="earth" cx="35%" cy="28%"><stop offset="0" stop-color="#dff7ff"/><stop offset=".16" stop-color="#62b7ff"/><stop offset=".48" stop-color="#1754a8"/><stop offset=".82" stop-color="#071a42"/><stop offset="1" stop-color="#020712"/></radialGradient>
+            <radialGradient id="sun" cx="50%" cy="50%"><stop offset="0" stop-color="#fffbd6"/><stop offset=".2" stop-color="#ffd76c"/><stop offset=".65" stop-color="#ff8b2c"/><stop offset="1" stop-color="#ff5a2000"/></radialGradient>
+          </defs>
+          <circle cx="285" cy="72" r="66" fill="url(#sun)" opacity=".9"/>
+          <circle cx="160" cy="185" r="108" fill="url(#earth)"/>
+          <path d="M110 128c24 6 40 24 56 25 18 1 31-16 53-13 17 3 29 15 41 29-18 14-28 26-37 42-22-8-38-5-55 4-17-11-35-18-58-16-7-21-7-45 0-71Z" fill="#54a96c" opacity=".78"/>
+          <ellipse cx="162" cy="191" rx="154" ry="54" fill="none" stroke="#7ee7ff" stroke-opacity=".28"/>
+          <circle cx="309" cy="198" r="18" fill="#a8b4c2" opacity=".75"/>
+        </svg>
+      </div>
+      <div class="glass"><strong>Saturday · 5 September</strong><span class="sub">Tap below to open the invitation.</span></div>
+    </article>
+
+    <article class="screen" data-step="2">
+      <div class="eyebrow">Destination locked</div>
+      <h2 class="headline">Entering<br><span class="gold">party orbit.</span></h2>
+      <p class="sub">Your route is set for Yohaan Level 04.</p>
+      <div class="scene">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Saturn with orbit lines">
+          <defs><radialGradient id="sat" cx="35%" cy="25%"><stop offset="0" stop-color="#fff2c5"/><stop offset=".38" stop-color="#d5a45d"/><stop offset=".72" stop-color="#805127"/><stop offset="1" stop-color="#23150d"/></radialGradient></defs>
+          <g class="orbiting"><ellipse cx="180" cy="150" rx="156" ry="58" fill="none" stroke="#7ee7ff" stroke-opacity=".14"/><ellipse cx="180" cy="150" rx="118" ry="42" fill="none" stroke="#7ee7ff" stroke-opacity=".2"/></g>
+          <circle cx="180" cy="145" r="78" fill="url(#sat)"/>
+          <ellipse cx="180" cy="145" rx="132" ry="30" fill="none" stroke="#e7cf9d" stroke-width="11" stroke-opacity=".9" transform="rotate(-12 180 145)"/>
+          <ellipse cx="180" cy="145" rx="116" ry="24" fill="none" stroke="#8a5a2d" stroke-width="6" stroke-opacity=".85" transform="rotate(-12 180 145)"/>
+        </svg>
+      </div>
+      <div class="glass"><strong>Mission status: ready</strong><span class="sub">No scanning. No setup. Just one tap to continue.</span></div>
+    </article>
+
+    <article class="screen" data-step="3">
+      <div class="eyebrow">Message from Yohaan</div>
+      <h2 class="headline">Come celebrate<br><span class="gold">with me.</span></h2>
+      <div class="scene">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Mars, Earth and moon in space">
+          <defs><radialGradient id="mars" cx="35%" cy="30%"><stop offset="0" stop-color="#ffc09c"/><stop offset=".4" stop-color="#d76d47"/><stop offset=".78" stop-color="#76291f"/><stop offset="1" stop-color="#250b0a"/></radialGradient></defs>
+          <circle cx="118" cy="170" r="82" fill="url(#mars)"/>
+          <circle cx="287" cy="85" r="48" fill="#1b4c8d"/>
+          <circle cx="316" cy="206" r="25" fill="#9aa6b2"/>
+          <path d="M20 239C105 199 197 201 338 235" fill="none" stroke="#7ee7ff" stroke-opacity=".25"/>
+        </svg>
+      </div>
+      <div class="glass quote">“I’m turning four and I’d love you to join me for lunch, games and a really fun day.”</div>
+    </article>
+
+    <article class="screen" data-step="4">
+      <div class="eyebrow">Party coordinates</div>
+      <h2 class="headline">Here’s where<br><span class="gold">we land.</span></h2>
+      <div class="meta">
+        <div class="row"><div class="icon">01</div><div><small>Date</small><b>Saturday, 5 September 2026</b></div></div>
+        <div class="row"><div class="icon">02</div><div><small>Time</small><b>12:30 PM · Lunch celebration</b></div></div>
+        <div class="row"><div class="icon">03</div><div><small>Location</small><b>1 Clarafield Crescent, Tarneit</b></div></div>
+        <div class="row"><div class="icon">04</div><div><small>Plan</small><b>Eat · Play · Laugh · Celebrate</b></div></div>
+      </div>
+      <div class="scene" style="min-height:130px">
+        <svg viewBox="0 0 360 150" role="img" aria-label="Solar system lineup">
+          <circle cx="42" cy="75" r="33" fill="#ffcc63"/>
+          <circle cx="113" cy="75" r="20" fill="#5c98e8"/>
+          <circle cx="177" cy="75" r="16" fill="#d96945"/>
+          <circle cx="244" cy="75" r="25" fill="#c89b58"/>
+          <ellipse cx="244" cy="75" rx="42" ry="11" fill="none" stroke="#e8d2a2" stroke-width="5"/>
+          <circle cx="319" cy="75" r="19" fill="#5573b8"/>
+        </svg>
+      </div>
+    </article>
+
+    <article class="screen" data-step="5">
+      <div class="eyebrow">Final question</div>
+      <h2 class="headline">Can you<br><span class="green">join us?</span></h2>
+      <p class="sub">Yohaan would love to have you there.</p>
+      <div class="scene">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Moon orbiting Earth">
+          <circle cx="175" cy="150" r="86" fill="#1f67bb"/>
+          <path d="M129 112c29 7 41 21 59 21 20 0 34-15 52-8 9 4 18 11 27 22-19 17-31 29-40 49-26-8-44-4-64 6-20-11-35-20-54-20-8-24-3-50 20-70Z" fill="#59ad72" opacity=".8"/>
+          <ellipse cx="175" cy="150" rx="150" ry="55" fill="none" stroke="#7ee7ff" stroke-opacity=".25"/>
+          <circle cx="310" cy="145" r="24" fill="#b7c0ca"/>
+        </svg>
+      </div>
+      <div class="glass"><strong>Your response stays on this device.</strong><span class="sub">This page doesn’t send or store RSVP data.</span></div>
+    </article>
+
+    <article class="screen" data-step="6">
+      <div id="confetti" class="confetti"></div>
+      <div class="eyebrow gold">Mission confirmed</div>
+      <h2 class="headline">See you<br><span class="gold">in orbit.</span></h2>
+      <div class="scene">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Golden sun and orbit rings">
+          <defs><radialGradient id="finalSun"><stop offset="0" stop-color="#fff9d9"/><stop offset=".25" stop-color="#ffd36a"/><stop offset=".58" stop-color="#ff9f2f"/><stop offset="1" stop-color="#ff6a1800"/></radialGradient></defs>
+          <circle cx="180" cy="145" r="98" fill="url(#finalSun)" class="pulse"/>
+          <ellipse cx="180" cy="145" rx="146" ry="50" fill="none" stroke="#ffd36a" stroke-opacity=".45"/>
+          <ellipse cx="180" cy="145" rx="118" ry="38" fill="none" stroke="#ffd36a" stroke-opacity=".25"/>
+          <path d="M152 145l20 20 42-48" fill="none" stroke="#fff7d7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="glass"><strong>5 September · 12:30 PM</strong><span class="sub">1 Clarafield Crescent, Tarneit</span></div>
+      <div class="tag">YOHAAN // LEVEL 04</div>
+    </article>
+  </section>
+  <div>
+    <div id="controls" class="controls"></div>
+    <div class="pager" id="pager" aria-hidden="true"></div>
+  </div>
+</main>
+<script>
+(()=>{
+  const root=document.querySelector('.app'); if(!root||root.dataset.ready)return; root.dataset.ready='1';
+  const screens=[...document.querySelectorAll('.screen')], controls=document.getElementById('controls'), counter=document.getElementById('counter'), pager=document.getElementById('pager');
+  let step=1;
+  screens.forEach((_,i)=>{const d=document.createElement('i'); if(i===0)d.className='on'; pager.appendChild(d)});
+  const dots=[...pager.children];
+  function button(label,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=label;if(cls)b.className=cls;b.addEventListener('click',fn);controls.appendChild(b)}
+  function render(n){step=Math.max(1,Math.min(6,n));screens.forEach((s,i)=>s.classList.toggle('active',i===step-1));dots.forEach((d,i)=>d.classList.toggle('on',i===step-1));counter.textContent=String(step).padStart(2,'0')+' / 06';controls.innerHTML='';
+    if(step===1)button('OPEN INVITATION','primary',()=>render(2));
+    else if(step===2)button('CONTINUE','',()=>render(3));
+    else if(step===3)button('SEE PARTY DETAILS','',()=>render(4));
+    else if(step===4)button('CONTINUE','',()=>render(5));
+    else if(step===5){controls.className='controls two';button('YES · I’M IN','success',()=>{render(6);celebrate()});button('CAN’T MAKE IT','danger',()=>{controls.className='controls';controls.innerHTML='';button('VIEW DETAILS AGAIN','',()=>render(4));button('START OVER','',()=>render(1))});return}
+    else if(step===6)button('REPLAY INVITATION','',()=>render(1));
+    controls.className='controls';
+  }
+  function celebrate(){const c=document.getElementById('confetti'); if(!c)return; c.innerHTML=''; const chars=['✦','•','◆','★']; for(let i=0;i<28;i++){const e=document.createElement('b');e.textContent=chars[i%chars.length];e.style.left=(Math.random()*96)+'%';e.style.color=i%2?'#ffd36a':'#7ee7ff';e.style.animationDelay=(Math.random()*.5)+'s';c.appendChild(e)}setTimeout(()=>c.innerHTML='',2000)}
+  render(1);
+})();
+</script>
+</body>
+</html>
