@@ -6,145 +6,27 @@
 <meta name="theme-color" content="#050711">
 <title>Yohaan turns 4</title>
 <style>
-:root{--bg:#050711;--panel:#0b1020;--text:#f7f8fb;--muted:#b9c2d0;--cyan:#7ee7ff;--gold:#ffd36a;--green:#7df0a0;--red:#ff7f91;--line:rgba(255,255,255,.12)}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}body{min-height:100dvh;padding:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));display:grid;place-items:center;overflow:hidden}.app{width:min(100%,430px);height:min(calc(100dvh - 28px),880px);display:grid;grid-template-rows:auto 1fr auto;gap:10px}.top{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#98a6bb;padding:0 4px}.top b{color:#fff}.stage{position:relative;overflow:hidden;border-radius:26px;border:1px solid var(--line);background:linear-gradient(180deg,#0b1020 0%,#070b16 52%,#050711 100%);min-height:0}.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";pointer-events:none;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.2px);background-size:41px 41px;opacity:.24}.stars:before{background-size:63px 63px;background-position:16px 9px;opacity:.15}.stars:after{background-size:91px 91px;background-position:37px 28px;opacity:.12}.screen{position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;gap:14px;opacity:0;transform:translateX(24px) scale(.985);pointer-events:none;transition:opacity .38s ease,transform .38s ease}.screen.active{opacity:1;transform:none;pointer-events:auto}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:800}.headline{font-size:clamp(34px,10vw,52px);line-height:.96;margin:0;letter-spacing:-.045em;font-weight:900}.sub{font-size:16px;line-height:1.48;color:var(--muted);margin:0}.scene{position:relative;flex:1;min-height:220px;display:grid;place-items:center}.scene svg{width:100%;height:100%;max-height:380px;overflow:visible}.glass{border:1px solid var(--line);background:rgba(12,18,34,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:18px;padding:15px}.glass strong{display:block;font-size:18px;line-height:1.25;margin-bottom:5px}.meta{display:grid;gap:9px}.row{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035)}.icon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(126,231,255,.1);color:var(--cyan);font-weight:900;flex:0 0 auto}.row small{display:block;color:#8d9ab0;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:2px}.row b{font-size:15px;line-height:1.35}.controls{display:grid;gap:8px}.controls.two{grid-template-columns:1fr 1fr}button{appearance:none;border:1px solid rgba(126,231,255,.45);border-radius:14px;min-height:50px;padding:11px 14px;background:#0d2032;color:#fff;font-size:14px;font-weight:850;letter-spacing:.01em}button.primary{background:linear-gradient(135deg,#ffd36a,#ffb43b);color:#171006;border-color:#ffe3a1}button.success{background:linear-gradient(135deg,#67e692,#36c86e);color:#07140c;border-color:#a7f4bc}button.danger{background:#3c1821;color:#ffdce2;border-color:#8b3c4b}.pager{display:flex;justify-content:center;gap:6px}.pager i{width:6px;height:6px;border-radius:99px;background:#394156;transition:width .25s ease,background .25s ease}.pager i.on{width:22px;background:var(--cyan)}.tag{display:inline-flex;align-self:flex-start;border-radius:99px;padding:7px 10px;font-size:11px;font-weight:800;background:rgba(255,211,106,.1);color:var(--gold);border:1px solid rgba(255,211,106,.22)}.quote{font-size:21px;line-height:1.38;font-weight:800;letter-spacing:-.02em}.gold{color:var(--gold)}.green{color:var(--green)}.confirmMark{font-size:74px;line-height:1;color:var(--gold);text-align:center}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti b{position:absolute;top:-20px;animation:fall 1.7s linear forwards}@keyframes fall{to{transform:translateY(720px) rotate(360deg);opacity:0}}@keyframes orbit{to{transform:rotate(360deg)}}.orbiting{transform-origin:50% 50%;animation:orbit 18s linear infinite}.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{opacity:.6;transform:scale(1.03)}}@media(max-width:380px){body{padding:8px}.app{height:calc(100dvh - 16px);gap:7px}.stage{border-radius:20px}.screen{padding:17px}.scene{min-height:180px}.headline{font-size:34px}.sub{font-size:14px}.glass{padding:12px}.row{padding:10px}.row b{font-size:13px}button{min-height:46px;font-size:13px}}@media(max-height:720px){.screen{padding:15px;gap:10px}.scene{min-height:155px}.headline{font-size:31px}.sub{font-size:13px}.glass{padding:11px}.quote{font-size:18px}.meta{gap:6px}.row{padding:8px}button{min-height:44px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:root{--bg:#050711;--text:#f8fafc;--muted:#c4cedb;--cyan:#83e7ff;--gold:#ffd36a;--green:#76efa0;--red:#ff7f91;--line:rgba(255,255,255,.14)}
+*{box-sizing:border-box}html,body{margin:0;background:#050711;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}body{min-height:100dvh;display:grid;place-items:center;padding:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));overflow:hidden}.app{width:min(100%,430px);height:min(calc(100dvh - 28px),880px);display:grid;grid-template-rows:auto 1fr auto auto;gap:10px}.top{display:flex;justify-content:space-between;align-items:center;padding:0 4px;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#9aa7b9}.top b{color:#fff}.stage{position:relative;overflow:hidden;min-height:0;border-radius:26px;border:1px solid var(--line);background:#080c16}.screen{position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;gap:14px;opacity:0;transform:scale(1.04);pointer-events:none;transition:opacity .55s cubic-bezier(.22,.61,.36,1),transform .55s cubic-bezier(.22,.61,.36,1)}.screen.active{opacity:1;transform:scale(1);pointer-events:auto}.screen.leaving{opacity:0;transform:scale(.96)}.bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.05) contrast(1.03);transform:scale(1.08);transition:transform 1.2s cubic-bezier(.22,.61,.36,1)}.screen.active .bg{transform:scale(1)}.veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,7,15,.22) 0%,rgba(3,7,15,.42) 48%,rgba(3,7,15,.9) 100%),linear-gradient(90deg,rgba(3,7,15,.2),rgba(3,7,15,.02),rgba(3,7,15,.2))}.content{position:relative;z-index:2;display:flex;flex-direction:column;min-height:100%;gap:14px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:800}.headline{font-size:clamp(34px,10vw,52px);line-height:.96;margin:0;letter-spacing:-.045em;font-weight:900;text-shadow:0 2px 20px rgba(0,0,0,.45)}.sub{font-size:16px;line-height:1.48;color:#eef4fa;margin:0;text-shadow:0 1px 14px rgba(0,0,0,.7)}.gold{color:var(--gold)}.green{color:var(--green)}.glass{margin-top:auto;border:1px solid rgba(255,255,255,.16);background:rgba(7,12,24,.66);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:18px;padding:15px}.glass strong{display:block;font-size:18px;line-height:1.25;margin-bottom:5px}.quote{font-size:21px;line-height:1.38;font-weight:800;letter-spacing:-.02em}.meta{display:grid;gap:9px;margin-top:auto}.row{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(5,10,20,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.icon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(126,231,255,.12);color:var(--cyan);font-weight:900;flex:0 0 auto}.row small{display:block;color:#aab7c7;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:2px}.row b{font-size:15px;line-height:1.35}.controls{display:grid;gap:8px}.controls.two{grid-template-columns:1fr 1fr}button{appearance:none;border:1px solid rgba(126,231,255,.48);border-radius:14px;min-height:50px;padding:11px 14px;background:#0d2032;color:#fff;font-size:14px;font-weight:850}button.primary{background:linear-gradient(135deg,#ffd36a,#ffb43b);color:#171006;border-color:#ffe3a1}button.success{background:linear-gradient(135deg,#67e692,#36c86e);color:#07140c;border-color:#a7f4bc}button.danger{background:#3c1821;color:#ffdce2;border-color:#8b3c4b}.pager{display:flex;justify-content:center;gap:6px}.pager i{width:6px;height:6px;border-radius:99px;background:#394156;transition:width .3s ease,background .3s ease}.pager i.on{width:22px;background:var(--cyan)}.orbitFx{position:absolute;inset:0;pointer-events:none;opacity:0}.stage.transitioning .orbitFx{opacity:1}.orbitFx:before{content:"";position:absolute;left:50%;top:50%;width:120%;height:28%;border:1px solid rgba(126,231,255,.28);border-radius:50%;transform:translate(-50%,-50%) rotate(-12deg);animation:sweep .65s ease both}@keyframes sweep{0%{transform:translate(-50%,-50%) rotate(-12deg) scale(.75);opacity:0}50%{opacity:1}100%{transform:translate(-50%,-50%) rotate(18deg) scale(1.2);opacity:0}}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti b{position:absolute;top:-20px;animation:fall 1.7s linear forwards}@keyframes fall{to{transform:translateY(720px) rotate(360deg);opacity:0}}@media(max-width:380px){body{padding:8px}.app{height:calc(100dvh - 16px);gap:7px}.stage{border-radius:20px}.screen{padding:17px}.headline{font-size:34px}.sub{font-size:14px}.glass{padding:12px}.row{padding:10px}.row b{font-size:13px}button{min-height:46px;font-size:13px}}@media(max-height:720px){.screen{padding:15px;gap:10px}.headline{font-size:31px}.sub{font-size:13px}.glass{padding:11px}.quote{font-size:18px}.meta{gap:6px}.row{padding:8px}button{min-height:44px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <main class="app">
   <div class="top"><b>YOHAAN // LEVEL 04</b><span id="counter">01 / 06</span></div>
-  <section class="stage" aria-live="polite">
-    <div class="stars"></div>
-
-    <article class="screen active" data-step="1">
-      <div class="eyebrow">A transmission from space</div>
-      <h1 class="headline">Yohaan is<br><span class="gold">turning 4.</span></h1>
-      <p class="sub">A small birthday mission has just entered your orbit.</p>
-      <div class="scene">
-        <svg viewBox="0 0 360 300" role="img" aria-label="Earth rising above a glowing horizon">
-          <defs>
-            <radialGradient id="earth" cx="35%" cy="28%"><stop offset="0" stop-color="#dff7ff"/><stop offset=".16" stop-color="#62b7ff"/><stop offset=".48" stop-color="#1754a8"/><stop offset=".82" stop-color="#071a42"/><stop offset="1" stop-color="#020712"/></radialGradient>
-            <radialGradient id="sun" cx="50%" cy="50%"><stop offset="0" stop-color="#fffbd6"/><stop offset=".2" stop-color="#ffd76c"/><stop offset=".65" stop-color="#ff8b2c"/><stop offset="1" stop-color="#ff5a2000"/></radialGradient>
-          </defs>
-          <circle cx="285" cy="72" r="66" fill="url(#sun)" opacity=".9"/>
-          <circle cx="160" cy="185" r="108" fill="url(#earth)"/>
-          <path d="M110 128c24 6 40 24 56 25 18 1 31-16 53-13 17 3 29 15 41 29-18 14-28 26-37 42-22-8-38-5-55 4-17-11-35-18-58-16-7-21-7-45 0-71Z" fill="#54a96c" opacity=".78"/>
-          <ellipse cx="162" cy="191" rx="154" ry="54" fill="none" stroke="#7ee7ff" stroke-opacity=".28"/>
-          <circle cx="309" cy="198" r="18" fill="#a8b4c2" opacity=".75"/>
-        </svg>
-      </div>
-      <div class="glass"><strong>Saturday · 5 September</strong><span class="sub">Tap below to open the invitation.</span></div>
-    </article>
-
-    <article class="screen" data-step="2">
-      <div class="eyebrow">Destination locked</div>
-      <h2 class="headline">Entering<br><span class="gold">party orbit.</span></h2>
-      <p class="sub">Your route is set for Yohaan Level 04.</p>
-      <div class="scene">
-        <svg viewBox="0 0 360 300" role="img" aria-label="Saturn with orbit lines">
-          <defs><radialGradient id="sat" cx="35%" cy="25%"><stop offset="0" stop-color="#fff2c5"/><stop offset=".38" stop-color="#d5a45d"/><stop offset=".72" stop-color="#805127"/><stop offset="1" stop-color="#23150d"/></radialGradient></defs>
-          <g class="orbiting"><ellipse cx="180" cy="150" rx="156" ry="58" fill="none" stroke="#7ee7ff" stroke-opacity=".14"/><ellipse cx="180" cy="150" rx="118" ry="42" fill="none" stroke="#7ee7ff" stroke-opacity=".2"/></g>
-          <circle cx="180" cy="145" r="78" fill="url(#sat)"/>
-          <ellipse cx="180" cy="145" rx="132" ry="30" fill="none" stroke="#e7cf9d" stroke-width="11" stroke-opacity=".9" transform="rotate(-12 180 145)"/>
-          <ellipse cx="180" cy="145" rx="116" ry="24" fill="none" stroke="#8a5a2d" stroke-width="6" stroke-opacity=".85" transform="rotate(-12 180 145)"/>
-        </svg>
-      </div>
-      <div class="glass"><strong>Mission status: ready</strong><span class="sub">No scanning. No setup. Just one tap to continue.</span></div>
-    </article>
-
-    <article class="screen" data-step="3">
-      <div class="eyebrow">Message from Yohaan</div>
-      <h2 class="headline">Come celebrate<br><span class="gold">with me.</span></h2>
-      <div class="scene">
-        <svg viewBox="0 0 360 300" role="img" aria-label="Mars, Earth and moon in space">
-          <defs><radialGradient id="mars" cx="35%" cy="30%"><stop offset="0" stop-color="#ffc09c"/><stop offset=".4" stop-color="#d76d47"/><stop offset=".78" stop-color="#76291f"/><stop offset="1" stop-color="#250b0a"/></radialGradient></defs>
-          <circle cx="118" cy="170" r="82" fill="url(#mars)"/>
-          <circle cx="287" cy="85" r="48" fill="#1b4c8d"/>
-          <circle cx="316" cy="206" r="25" fill="#9aa6b2"/>
-          <path d="M20 239C105 199 197 201 338 235" fill="none" stroke="#7ee7ff" stroke-opacity=".25"/>
-        </svg>
-      </div>
-      <div class="glass quote">“I’m turning four and I’d love you to join me for lunch, games and a really fun day.”</div>
-    </article>
-
-    <article class="screen" data-step="4">
-      <div class="eyebrow">Party coordinates</div>
-      <h2 class="headline">Here’s where<br><span class="gold">we land.</span></h2>
-      <div class="meta">
-        <div class="row"><div class="icon">01</div><div><small>Date</small><b>Saturday, 5 September 2026</b></div></div>
-        <div class="row"><div class="icon">02</div><div><small>Time</small><b>12:30 PM · Lunch celebration</b></div></div>
-        <div class="row"><div class="icon">03</div><div><small>Location</small><b>1 Clarafield Crescent, Tarneit</b></div></div>
-        <div class="row"><div class="icon">04</div><div><small>Plan</small><b>Eat · Play · Laugh · Celebrate</b></div></div>
-      </div>
-      <div class="scene" style="min-height:130px">
-        <svg viewBox="0 0 360 150" role="img" aria-label="Solar system lineup">
-          <circle cx="42" cy="75" r="33" fill="#ffcc63"/>
-          <circle cx="113" cy="75" r="20" fill="#5c98e8"/>
-          <circle cx="177" cy="75" r="16" fill="#d96945"/>
-          <circle cx="244" cy="75" r="25" fill="#c89b58"/>
-          <ellipse cx="244" cy="75" rx="42" ry="11" fill="none" stroke="#e8d2a2" stroke-width="5"/>
-          <circle cx="319" cy="75" r="19" fill="#5573b8"/>
-        </svg>
-      </div>
-    </article>
-
-    <article class="screen" data-step="5">
-      <div class="eyebrow">Final question</div>
-      <h2 class="headline">Can you<br><span class="green">join us?</span></h2>
-      <p class="sub">Yohaan would love to have you there.</p>
-      <div class="scene">
-        <svg viewBox="0 0 360 300" role="img" aria-label="Moon orbiting Earth">
-          <circle cx="175" cy="150" r="86" fill="#1f67bb"/>
-          <path d="M129 112c29 7 41 21 59 21 20 0 34-15 52-8 9 4 18 11 27 22-19 17-31 29-40 49-26-8-44-4-64 6-20-11-35-20-54-20-8-24-3-50 20-70Z" fill="#59ad72" opacity=".8"/>
-          <ellipse cx="175" cy="150" rx="150" ry="55" fill="none" stroke="#7ee7ff" stroke-opacity=".25"/>
-          <circle cx="310" cy="145" r="24" fill="#b7c0ca"/>
-        </svg>
-      </div>
-      <div class="glass"><strong>Your response stays on this device.</strong><span class="sub">This page doesn’t send or store RSVP data.</span></div>
-    </article>
-
-    <article class="screen" data-step="6">
-      <div id="confetti" class="confetti"></div>
-      <div class="eyebrow gold">Mission confirmed</div>
-      <h2 class="headline">See you<br><span class="gold">in orbit.</span></h2>
-      <div class="scene">
-        <svg viewBox="0 0 360 300" role="img" aria-label="Golden sun and orbit rings">
-          <defs><radialGradient id="finalSun"><stop offset="0" stop-color="#fff9d9"/><stop offset=".25" stop-color="#ffd36a"/><stop offset=".58" stop-color="#ff9f2f"/><stop offset="1" stop-color="#ff6a1800"/></radialGradient></defs>
-          <circle cx="180" cy="145" r="98" fill="url(#finalSun)" class="pulse"/>
-          <ellipse cx="180" cy="145" rx="146" ry="50" fill="none" stroke="#ffd36a" stroke-opacity=".45"/>
-          <ellipse cx="180" cy="145" rx="118" ry="38" fill="none" stroke="#ffd36a" stroke-opacity=".25"/>
-          <path d="M152 145l20 20 42-48" fill="none" stroke="#fff7d7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="glass"><strong>5 September · 12:30 PM</strong><span class="sub">1 Clarafield Crescent, Tarneit</span></div>
-      <div class="tag">YOHAAN // LEVEL 04</div>
-    </article>
+  <section class="stage" id="stage" aria-live="polite">
+    <div class="orbitFx"></div>
+    <article class="screen active" data-step="1"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/ImageWall5_1920x1200-80.jpg?crop=faces%2Cfocalpoint&fit=clip&h=1200&w=1920')"></div><div class="veil"></div><div class="content"><div class="eyebrow">A transmission from space</div><h1 class="headline">Yohaan is<br><span class="gold">turning 4.</span></h1><p class="sub">A birthday mission has entered your orbit.</p><div class="glass"><strong>Saturday · 5 September 2026</strong><span class="sub">Tap below to open the invitation.</span></div></div></article>
+    <article class="screen" data-step="2"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2004/05/STScI-01EVVEZZ8Q3SZ4DTRBVF942J6A.tif?w=2000')"></div><div class="veil"></div><div class="content"><div class="eyebrow">Destination locked</div><h2 class="headline">Entering<br><span class="gold">party orbit.</span></h2><p class="sub">Your route is set for Yohaan Level 04.</p><div class="glass"><strong>Mission status: ready</strong><span class="sub">One tap and you’re through.</span></div></div></article>
+    <article class="screen" data-step="3"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/cds/3d/resources/image/mars/preview.webp?w=2048')"></div><div class="veil"></div><div class="content"><div class="eyebrow">Message from Yohaan</div><h2 class="headline">Come celebrate<br><span class="gold">with me.</span></h2><div class="glass quote">“I’m turning four and I’d love you to join me for lunch, games and a really fun day.”</div></div></article>
+    <article class="screen" data-step="4"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2004/05/STScI-01EVVEZZ8Q3SZ4DTRBVF942J6A.tif?w=2000')"></div><div class="veil"></div><div class="content"><div class="eyebrow">Party coordinates</div><h2 class="headline">Here’s where<br><span class="gold">we land.</span></h2><div class="meta"><div class="row"><div class="icon">01</div><div><small>Date</small><b>Saturday, 5 September 2026</b></div></div><div class="row"><div class="icon">02</div><div><small>Time</small><b>12:30 PM · Lunch celebration</b></div></div><div class="row"><div class="icon">03</div><div><small>Location</small><b>1 Clarafield Crescent, Tarneit</b></div></div><div class="row"><div class="icon">04</div><div><small>Plan</small><b>Eat · Play · Laugh · Celebrate</b></div></div></div></div></article>
+    <article class="screen" data-step="5"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/ImageWall5_1920x1200-80.jpg?crop=faces%2Cfocalpoint&fit=clip&h=1200&w=1920')"></div><div class="veil"></div><div class="content"><div class="eyebrow">Final question</div><h2 class="headline">Can you<br><span class="green">join us?</span></h2><p class="sub">Yohaan would love to have you there.</p><div class="glass"><strong>Your choice stays on this device.</strong><span class="sub">This invitation does not send or store RSVP data.</span></div></div></article>
+    <article class="screen" data-step="6"><div class="bg" style="background-image:url('https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/ImageWall5_1920x1200-80.jpg?crop=faces%2Cfocalpoint&fit=clip&h=1200&w=1920')"></div><div class="veil"></div><div id="confetti" class="confetti"></div><div class="content"><div class="eyebrow">Mission confirmed</div><h2 class="headline">See you<br><span class="gold">there!</span></h2><p class="sub">Saturday · 5 September · 12:30 PM</p><div class="glass"><strong>1 Clarafield Crescent, Tarneit</strong><span class="sub">Yohaan can’t wait to celebrate with you.</span></div></div></article>
   </section>
-  <div>
-    <div id="controls" class="controls"></div>
-    <div class="pager" id="pager" aria-hidden="true"></div>
-  </div>
+  <div class="pager" id="pager"></div>
+  <div class="controls" id="controls"></div>
 </main>
 <script>
-(()=>{
-  const root=document.querySelector('.app'); if(!root||root.dataset.ready)return; root.dataset.ready='1';
-  const screens=[...document.querySelectorAll('.screen')], controls=document.getElementById('controls'), counter=document.getElementById('counter'), pager=document.getElementById('pager');
-  let step=1;
-  screens.forEach((_,i)=>{const d=document.createElement('i'); if(i===0)d.className='on'; pager.appendChild(d)});
-  const dots=[...pager.children];
-  function button(label,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=label;if(cls)b.className=cls;b.addEventListener('click',fn);controls.appendChild(b)}
-  function render(n){step=Math.max(1,Math.min(6,n));screens.forEach((s,i)=>s.classList.toggle('active',i===step-1));dots.forEach((d,i)=>d.classList.toggle('on',i===step-1));counter.textContent=String(step).padStart(2,'0')+' / 06';controls.innerHTML='';
-    if(step===1)button('OPEN INVITATION','primary',()=>render(2));
-    else if(step===2)button('CONTINUE','',()=>render(3));
-    else if(step===3)button('SEE PARTY DETAILS','',()=>render(4));
-    else if(step===4)button('CONTINUE','',()=>render(5));
-    else if(step===5){controls.className='controls two';button('YES · I’M IN','success',()=>{render(6);celebrate()});button('CAN’T MAKE IT','danger',()=>{controls.className='controls';controls.innerHTML='';button('VIEW DETAILS AGAIN','',()=>render(4));button('START OVER','',()=>render(1))});return}
-    else if(step===6)button('REPLAY INVITATION','',()=>render(1));
-    controls.className='controls';
-  }
-  function celebrate(){const c=document.getElementById('confetti'); if(!c)return; c.innerHTML=''; const chars=['✦','•','◆','★']; for(let i=0;i<28;i++){const e=document.createElement('b');e.textContent=chars[i%chars.length];e.style.left=(Math.random()*96)+'%';e.style.color=i%2?'#ffd36a':'#7ee7ff';e.style.animationDelay=(Math.random()*.5)+'s';c.appendChild(e)}setTimeout(()=>c.innerHTML='',2000)}
-  render(1);
-})();
+(()=>{const stage=document.getElementById('stage'),screens=[...document.querySelectorAll('.screen')],counter=document.getElementById('counter'),pager=document.getElementById('pager'),controls=document.getElementById('controls');let current=0,busy=false;const labels=[['OPEN INVITATION','primary'],['CONTINUE',''],['SEE PARTY DETAILS',''],['CONTINUE',''],['YES · I’M IN','success'],['REPLAY INVITATION','']];screens.forEach((_,i)=>{const d=document.createElement('i');if(i===0)d.classList.add('on');pager.appendChild(d)});function drawControls(){controls.className='controls';controls.innerHTML='';if(current===4){controls.classList.add('two');add('YES · I’M IN','success',()=>go(5));add('CAN’T MAKE IT','danger',()=>{controls.className='controls';controls.innerHTML='';add('VIEW DETAILS AGAIN','',()=>go(3));add('REPLAY FROM START','',()=>go(0))})}else{add(labels[current][0],labels[current][1],()=>current===5?go(0):go(current+1))}}function add(text,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=text;if(cls)b.className=cls;b.addEventListener('click',fn);controls.appendChild(b)}function celebrate(){const c=document.getElementById('confetti');if(!c)return;c.innerHTML='';for(let i=0;i<26;i++){const e=document.createElement('b');e.textContent=['✦','◆','★'][i%3];e.style.left=Math.random()*96+'%';e.style.color=i%2?'#ffd36a':'#83e7ff';e.style.animationDelay=Math.random()*.35+'s';c.appendChild(e)}setTimeout(()=>c.innerHTML='',1900)}function go(next){if(busy||next<0||next>=screens.length)return;busy=true;stage.classList.add('transitioning');const old=screens[current];old.classList.add('leaving');setTimeout(()=>{old.classList.remove('active','leaving');current=next;screens[current].classList.add('active');counter.textContent=String(current+1).padStart(2,'0')+' / 06';[...pager.children].forEach((d,i)=>d.classList.toggle('on',i===current));drawControls();if(current===5)celebrate();setTimeout(()=>{stage.classList.remove('transitioning');busy=false},520)},260)}drawControls()})();
 </script>
 </body>
 </html>
