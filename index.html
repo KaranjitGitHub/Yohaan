@@ -47,7 +47,7 @@
 </main>
 <script>
 (()=>{
-const RSVP_ENDPOINT='https://docs.google.com/spreadsheets/d/1-c2Q_srQOXWq1TksEXX3frMVnANi5uQGYRWbJJAOcX8/edit?usp=drivesdk';
+const RSVP_ENDPOINT='https://script.google.com/macros/s/AKfycbySDpDHMKoqrGCuC0wizc2xvr4A-odqPX-w0_HIgMepkPlLkpwwuMnM8c0RtbmM1Jjg/exec';
 const stage=document.getElementById('stage'),screens=[...document.querySelectorAll('.screen')],counter=document.getElementById('counter'),pager=document.getElementById('pager'),controls=document.getElementById('controls'),sheet=document.getElementById('rsvpSheet'),form=document.getElementById('rsvpForm'),attendance=document.getElementById('attendance'),partyCounts=document.getElementById('partyCounts'),dietField=document.getElementById('dietField'),errorBox=document.getElementById('formError');
 let current=0,busy=false,lastAttendance='yes';
 screens.forEach((_,i)=>{const d=document.createElement('i');if(i===0)d.classList.add('on');pager.appendChild(d)});
