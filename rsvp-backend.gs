@@ -1,9 +1,10 @@
-const SHEET_NAME = 'Yohaan RSVP Responses';
+const SPREADSHEET_ID = '1-c2Q_srQOXWq1TksEXX3frMVnANi5uQGYRWbJJAOcX8';
 const TAB_NAME = 'Responses';
 
 function doPost(e) {
   try {
-    const data = JSON.parse(e.postData.contents || '{}');
+    const raw = e && e.postData ? e.postData.contents : '{}';
+    const data = JSON.parse(raw || '{}');
     const sheet = getResponseSheet_();
 
     sheet.appendRow([
@@ -19,6 +20,7 @@ function doPost(e) {
 
     return json_({ ok: true });
   } catch (err) {
+    console.error(err);
     return json_({ ok: false, error: String(err) });
   }
 }
@@ -28,18 +30,7 @@ function doGet() {
 }
 
 function getResponseSheet_() {
-  const props = PropertiesService.getScriptProperties();
-  let spreadsheetId = props.getProperty('RSVP_SPREADSHEET_ID');
-  let ss;
-
-  if (!spreadsheetId) {
-    ss = SpreadsheetApp.create(SHEET_NAME);
-    spreadsheetId = ss.getId();
-    props.setProperty('RSVP_SPREADSHEET_ID', spreadsheetId);
-  } else {
-    ss = SpreadsheetApp.openById(spreadsheetId);
-  }
-
+  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
   let sheet = ss.getSheetByName(TAB_NAME);
   if (!sheet) sheet = ss.insertSheet(TAB_NAME);
 
